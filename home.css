@@ -1,0 +1,232 @@
+
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #142c44;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #142c44;
+}
+
+.logo span {
+    color: #1685d1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #142c44;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #1685d1;
+}
+
+.login-btn {
+    background-color: #1685d1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+    min-height: 75vh;
+    background-color: #f0f7fc;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.subtitle {
+    color: #1685d1;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+.book-btn {
+    display: inline-block;
+    background-color: #1685d1;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.book-btn:hover,
+.login-btn:hover {
+    background-color: #1168a5;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+/* Services Section */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #64748b;
+    margin-bottom: 45px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #f0f7fc;
+    padding: 40px 25px;
+    border-radius: 15px;
+    border: 1px solid #e1ecf5;
+    transition: 0.3s;
+}
+
+.service-card i {
+    font-size: 35px;
+    color: #1685d1;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1685d1;
+    font-weight: bold;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000010;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142c44;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}
+.user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1685d1;
+}

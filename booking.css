@@ -1,0 +1,211 @@
+
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7fc;
+    color: #142c44;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #142c44;
+}
+
+.logo span {
+    color: #1685d1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #142c44;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #1685d1;
+}
+
+.login-btn {
+    background-color: #1685d1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+/* Booking Section */
+
+.booking-section {
+    padding: 60px 8%;
+    min-height: 85vh;
+}
+
+.booking-section h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: start;
+}
+
+/* Doctor Information */
+
+.doctor-info {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.doctor-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.doctor-info h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.doctor-info p {
+    color: #1685d1;
+    margin-bottom: 20px;
+}
+
+.doctor-info h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.doctor-info a {
+    color: #1685d1;
+}
+
+/* Booking Form */
+
+#bookingForm {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce3eb;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 22px;
+    outline-color: #1685d1;
+    font-family: inherit;
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: #1685d1;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover,
+.login-btn:hover {
+    background-color: #1168a5;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142c44;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-section h1 {
+        font-size: 30px;
+    }
+}
+.user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1685d1;
+}

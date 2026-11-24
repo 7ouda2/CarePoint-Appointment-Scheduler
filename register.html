@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint | Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <a href="home.html" class="logo">
+            Care<span>Point</span>
+        </a>
+
+        <h1>Create Account</h1>
+
+        <p class="description">
+            Register to manage your appointments.
+        </p>
+
+        <form id="registerForm">
+
+            <label for="fullName">Full Name</label>
+
+            <input type="text" id="fullName"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+
+            <input type="password" id="password"
+                   placeholder="Minimum 6 characters"
+                   minlength="6" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm your password" required>
+
+            <p id="message"></p>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+        <a href="home.html" class="back-link">
+            Back to Home
+        </a>
+
+    </div>
+
+    <script src="register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint | Doctor Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="home.html" class="logo">
+                Care<span>Point</span>
+            </a>
+
+            <h3>Doctor Dashboard</h3>
+
+            <button id="logoutBtn">Logout</button>
+
+        </nav>
+    </header>
+
+    <!-- Dashboard -->
+
+    <main class="dashboard">
+
+        <section class="welcome">
+
+            <h1 id="doctorName">Welcome, Doctor</h1>
+
+            <p>Manage your patient appointments.</p>
+
+        </section>
+
+        <!-- Statistics -->
+
+        <section class="statistics">
+
+            <div class="stat-card total">
+                <h3>Total Appointments</h3>
+                <h2 id="totalCount">0</h2>
+            </div>
+
+            <div class="stat-card confirmed">
+                <h3>Confirmed</h3>
+                <h2 id="confirmedCount">0</h2>
+            </div>
+
+            <div class="stat-card cancelled">
+                <h3>Cancelled</h3>
+                <h2 id="cancelledCount">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Appointments Table -->
+
+        <section class="table-section">
+
+            <h2>Patient Appointments</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="appointmentsTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p id="emptyMessage">
+                No appointments found.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>CarePoint</h2>
+        <p>Copyright &copy; 2026 CarePoint.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

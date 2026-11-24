@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint | Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="home.html" class="logo">
+                Care<span>Point</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+
+    <section class="booking-section">
+
+        <h1>Book Your Appointment</h1>
+        <p class="description">
+            Complete your information to reserve an appointment.
+        </p>
+
+        <div class="booking-container">
+
+            <!-- Doctor Information -->
+
+            <div class="doctor-info">
+
+                <img id="doctorImage" src="8815112.png" alt="Doctor">
+
+                <h2 id="doctorName"></h2>
+
+                <p id="doctorSpecialty"></p>
+
+                <h3 id="doctorPrice"></h3>
+
+                <a href="doctors.html">Change Doctor</a>
+
+            </div>
+
+            <!-- Booking Form -->
+
+            <form id="bookingForm">
+
+                <label for="patientName">Full Name</label>
+                <input type="text" id="patientName"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"
+                       placeholder="Enter your phone number"
+                       pattern="[0-9]{11}" required>
+
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Appointment Time</label>
+
+                <select id="time" required>
+
+                    <option value="">Select Time</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+
+                </select>
+
+                <button type="submit" class="confirm-btn">
+                    Confirm Appointment
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <h2>CarePoint</h2>
+        <p>Your Health, Our Priority.</p>
+        <p>Copyright &copy; 2026 CarePoint.</p>
+    </footer>
+
+    <script src="booking.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

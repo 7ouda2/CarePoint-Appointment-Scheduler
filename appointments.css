@@ -1,0 +1,310 @@
+
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #142c44;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #142c44;
+}
+
+.logo span {
+    color: #1685d1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #142c44;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #1685d1;
+}
+
+.login-btn {
+    background-color: #1685d1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+/* Page Title */
+
+.page-title {
+    background-color: #f0f7fc;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-title h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.page-title p {
+    color: #64748b;
+}
+
+/* Appointments Section */
+
+.appointments-section {
+    padding: 50px 8%;
+    min-height: 60vh;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.new-btn {
+    background-color: #1685d1;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+}
+
+.appointment-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.doctor-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.doctor-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f0f7fc;
+}
+
+.doctor-details h3 {
+    margin-bottom: 10px;
+}
+
+.doctor-details p {
+    color: #64748b;
+    margin: 8px 0;
+}
+
+.appointment-details p {
+    margin: 12px 0;
+}
+
+/* Appointment Status */
+
+.status {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.confirmed {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.cancelled {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+/* Buttons */
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reschedule-btn,
+.save-btn {
+    background-color: #1685d1;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Empty Message */
+
+#emptyMessage {
+    display: none;
+    text-align: center;
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+}
+
+#emptyMessage p {
+    color: #64748b;
+    margin: 20px 0;
+}
+
+#emptyMessage a {
+    color: #1685d1;
+    font-weight: bold;
+}
+
+/* Reschedule Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: #00000080;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.modal-content h2 {
+    margin-bottom: 25px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce3eb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.save-btn,
+.close-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.close-btn {
+    background-color: #e5e7eb;
+    color: #142c44;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142c44;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .appointment-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-header {
+        flex-wrap: wrap;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+}
+.user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1685d1;
+}

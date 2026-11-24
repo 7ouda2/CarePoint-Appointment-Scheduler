@@ -1,0 +1,159 @@
+
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7fc;
+    color: #142c44;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Login Container */
+
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 950px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px #00000012;
+}
+
+/* Welcome Side */
+
+.welcome-side {
+    background-color: #e5f2fc;
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #142c44;
+}
+
+.logo span {
+    color: #1685d1;
+}
+
+.welcome-side img {
+    width: 220px;
+    max-width: 100%;
+    margin: 35px 0;
+}
+
+.welcome-side h2 {
+    margin-bottom: 15px;
+}
+
+.welcome-side p {
+    color: #64748b;
+}
+
+/* Form Side */
+
+.form-side {
+    padding: 60px 40px;
+}
+
+.form-side h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dce3eb;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    outline-color: #1685d1;
+}
+
+button {
+    width: 100%;
+    background-color: #1685d1;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1168a5;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link a,
+.back-link {
+    color: #1685d1;
+    font-weight: bold;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-side {
+        display: none;
+    }
+
+    .form-side {
+        padding: 35px 25px;
+    }
+}

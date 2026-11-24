@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint | Doctors</title>
+    <link rel="stylesheet" href="doctors.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="home.html" class="logo">
+                Care<span>Point</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doctors.html" class="active">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+
+    <section class="page-title">
+        <h1>Find Your Doctor</h1>
+        <p>Choose the right specialist for your healthcare needs.</p>
+    </section>
+
+    <!-- Search and Filter -->
+
+    <section class="filters">
+
+        <input type="text" id="searchInput"
+               placeholder="Search by doctor name...">
+
+        <select id="specialtyFilter">
+            <option value="all">All Specialties</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Dentistry">Dentistry</option>
+            <option value="Dermatology">Dermatology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Pediatrics">Pediatrics</option>
+        </select>
+
+    </section>
+
+    <!-- Doctors List -->
+
+    <section class="doctors-container">
+
+        <div class="doctor-card" data-specialty="Cardiology">
+            <img src="d1.png" alt="Doctor Ahmed">
+            <h2>Dr. Ahmed Hassan</h2>
+            <p class="specialty">Cardiology</p>
+            <p>10 Years of Experience</p>
+            <p class="price">500 EGP</p>
+            <a href="booking.html?doctor=1" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-specialty="Dentistry">
+            <img src="d3.png" alt="Doctor Sara">
+            <h2>Dr. Sara Mohamed</h2>
+            <p class="specialty">Dentistry</p>
+            <p>8 Years of Experience</p>
+            <p class="price">350 EGP</p>
+            <a href="booking.html?doctor=2" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-specialty="Dermatology">
+            <img src="d2.png" alt="Doctor Omar">
+            <h2>Dr. Omar Ali</h2>
+            <p class="specialty">Dermatology</p>
+            <p>7 Years of Experience</p>
+            <p class="price">400 EGP</p>
+            <a href="booking.html?doctor=3" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-specialty="Neurology">
+            <img src="d5.png" alt="Doctor Mariam">
+            <h2>Dr. Mariam Adel</h2>
+            <p class="specialty">Neurology</p>
+            <p>12 Years of Experience</p>
+            <p class="price">600 EGP</p>
+            <a href="booking.html?doctor=4" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-specialty="Orthopedics">
+            <img src="d4.png" alt="Doctor Mostafa">
+            <h2>Dr. Mostafa Ibrahim</h2>
+            <p class="specialty">Orthopedics</p>
+            <p>9 Years of Experience</p>
+            <p class="price">450 EGP</p>
+            <a href="booking.html?doctor=5" class="book-btn">Book Now</a>
+        </div>
+
+        <div class="doctor-card" data-specialty="Pediatrics">
+            <img src="d6.png" alt="Doctor Nour">
+            <h2>Dr. Nour Khaled</h2>
+            <p class="specialty">Pediatrics</p>
+            <p>6 Years of Experience</p>
+            <p class="price">300 EGP</p>
+            <a href="booking.html?doctor=6" class="book-btn">Book Now</a>
+        </div>
+
+    </section>
+
+    <p id="noResults" style="display: none;">
+        No doctors found.
+    </p>
+
+    <!-- Footer -->
+
+    <footer>
+        <h2>CarePoint</h2>
+        <p>Your Health, Our Priority.</p>
+        <p>Copyright &copy; 2026 CarePoint.</p>
+    </footer>
+
+    <script src="doctors.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

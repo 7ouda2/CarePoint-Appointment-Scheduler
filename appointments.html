@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint | Appointments</title>
+    <link rel="stylesheet" href="appointments.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="home.html" class="logo">
+                Care<span>Point</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html" class="active">Appointments</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login-btn">Login</a>
+
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+
+    <section class="page-title">
+        <h1>My Appointments</h1>
+        <p>View and manage your healthcare appointments.</p>
+    </section>
+
+    <!-- Appointments List -->
+
+    <section class="appointments-section">
+
+        <div class="section-header">
+
+            <h2>Your Appointments</h2>
+
+            <a href="doctors.html" class="new-btn">
+                + New Appointment
+            </a>
+
+        </div>
+
+        <div id="appointmentsList"></div>
+
+        <div id="emptyMessage">
+            <h2>No Appointments Yet</h2>
+            <p>You have not booked any appointments.</p>
+            <a href="doctors.html">Find a Doctor</a>
+        </div>
+
+    </section>
+
+    <!-- Reschedule Window -->
+
+    <div id="rescheduleModal" class="modal">
+
+        <div class="modal-content">
+
+            <h2>Reschedule Appointment</h2>
+
+            <form id="rescheduleForm">
+
+                <label for="newDate">New Date</label>
+
+                <input type="date" id="newDate" required>
+
+                <label for="newTime">New Time</label>
+
+                <select id="newTime" required>
+
+                    <option value="">Select Time</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">01:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+
+                </select>
+
+                <button type="submit" class="save-btn">
+                    Save Changes
+                </button>
+
+                <button type="button" id="closeModal" class="close-btn">
+                    Close
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <h2>CarePoint</h2>
+        <p>Your Health, Our Priority.</p>
+        <p>Copyright &copy; 2026 CarePoint.</p>
+    </footer>
+
+    <script src="appointments.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

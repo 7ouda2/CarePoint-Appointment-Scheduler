@@ -1,0 +1,259 @@
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #142c44;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #142c44;
+}
+
+.logo span {
+    color: #1685d1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #142c44;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #1685d1;
+}
+
+.login-btn {
+    background-color: #1685d1;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1685d1;
+}
+
+/* About Section */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+    background-color: #f0f7fc;
+}
+
+.about-content {
+    width: 55%;
+}
+
+.subtitle {
+    color: #1685d1;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #1685d1;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.explore-btn:hover,
+.login-btn:hover {
+    background-color: #1168a5;
+}
+
+/* Objectives Section */
+
+.objectives {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.objectives h2,
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.objectives-container,
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.objective-card {
+    padding: 35px 25px;
+    border-radius: 15px;
+    background-color: #f0f7fc;
+    border: 1px solid #e5e7eb;
+}
+
+.objective-card h3 {
+    color: #1685d1;
+    margin-bottom: 15px;
+}
+
+.objective-card p {
+    line-height: 1.7;
+    color: #64748b;
+}
+
+/* Team Section */
+
+.team {
+    background-color: #f0f7fc;
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.team > p {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px 20px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #00000010;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e5f2fc;
+    color: #1685d1;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.team-card h3 {
+    margin-bottom: 15px;
+}
+
+.team-card p {
+    color: #64748b;
+    margin: 10px 0;
+}
+
+.university {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142c44;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .about-image {
+        width: 100%;
+    }
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .objectives-container,
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+}
